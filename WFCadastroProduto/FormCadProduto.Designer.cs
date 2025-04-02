@@ -48,7 +48,7 @@
             // lblCodigo
             // 
             lblCodigo.AutoSize = true;
-            lblCodigo.Location = new Point(12, 12);
+            lblCodigo.Location = new Point(14, 22);
             lblCodigo.Name = "lblCodigo";
             lblCodigo.Size = new Size(49, 15);
             lblCodigo.TabIndex = 1;
@@ -74,7 +74,7 @@
             // 
             gpbStatus.Controls.Add(rdbInativo);
             gpbStatus.Controls.Add(rdbAtivo);
-            gpbStatus.Location = new Point(178, 12);
+            gpbStatus.Location = new Point(80, 12);
             gpbStatus.Name = "gpbStatus";
             gpbStatus.Size = new Size(80, 79);
             gpbStatus.TabIndex = 4;
@@ -149,7 +149,7 @@
             // mskCodigo
             // 
             mskCodigo.Enabled = false;
-            mskCodigo.Location = new Point(12, 30);
+            mskCodigo.Location = new Point(14, 40);
             mskCodigo.Mask = "0000";
             mskCodigo.Name = "mskCodigo";
             mskCodigo.Size = new Size(49, 23);

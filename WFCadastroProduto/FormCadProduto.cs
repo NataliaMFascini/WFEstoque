@@ -58,8 +58,14 @@ namespace WFCadastroProduto
             prod.Status = rdbAtivo.Checked ? EStatus.Ativo : EStatus.Inativo;//se estiver ativo? deixa ativo, se não inativo (ternario)
 
             Produto.ListaProdutos.Add(prod);
-
-            MessageBox.Show("Produto cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (prod.Cadastrar())
+            {
+                MessageBox.Show("Produto cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                Erro("Produto não inserido no banco de dados.");
+            }
 
             LimparCampos();
 
