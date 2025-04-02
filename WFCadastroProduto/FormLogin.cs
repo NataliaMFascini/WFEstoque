@@ -32,7 +32,7 @@ namespace WFCadastroProduto
         {
             foreach (Usuario us in Usuario.ListaUsuarios)
             {
-                if(us.login == txtLogin.Text && us.senha == txtSenha.Text)
+                if (us.login == txtLogin.Text && us.senha == txtSenha.Text)
                 {
                     FormMenu form = new FormMenu();
                     form.ShowDialog();
@@ -45,6 +45,14 @@ namespace WFCadastroProduto
         private void Erro(string mensagem)
         {
             MessageBox.Show(mensagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogar_Click(sender, e);
+            }
         }
     }
 }

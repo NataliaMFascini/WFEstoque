@@ -148,11 +148,13 @@
             // 
             // mskCodigo
             // 
-            mskCodigo.Location = new Point(23, 30);
+            mskCodigo.Enabled = false;
+            mskCodigo.Location = new Point(12, 30);
             mskCodigo.Mask = "0000";
             mskCodigo.Name = "mskCodigo";
-            mskCodigo.Size = new Size(27, 23);
+            mskCodigo.Size = new Size(49, 23);
             mskCodigo.TabIndex = 10;
+            mskCodigo.TextAlign = HorizontalAlignment.Center;
             // 
             // FormCadProduto
             // 
